@@ -1,0 +1,23 @@
+{% extends 'musicplay/base.html' %}<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    <title>SoundBase: Base of Good Music</title>
+    {% endblock %}
+</head>
+<body>
+{% block breadcrumb %} <h5 class="breadcrumb"> SoundBase > Albums </h5> {% endblock %}
+{% block body %}
+{% for album in all_albums %}
+     <div class="col-md-4">
+            <a href="{% url 'musicplay:albumdetail' album.id %}"><img class="imgeffect"  src="../media/{{ album.album_art }}"> <span class="viewdetails"></span></a><br>
+                 <h5 class="text-center" href="{% url 'musicplay:albumdetail' album.id %}"> <span class="glyphicon glyphicon-music"></span> {{ album }}</h5>
+                 <h5 class="text-center"> <span class="glyphicon glyphicon-user"></span> {{ album.artiste }}</h5>
+            </div>
+
+{% endfor %}
+{% endblock %}
+</body>
+</html>

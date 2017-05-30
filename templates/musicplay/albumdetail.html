@@ -1,0 +1,45 @@
+{%  extends 'musicplay/details.html' %}<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SoundBase: {{ albumdetails }}</title>
+</head>
+
+
+<body>
+{% block breadcrumb %} <h5 class="breadcrumb"> SoundBase > Songs > {{ albumdetails }} </h5> {% endblock %}
+
+{% block songdetails %}
+        <div class="col-md-9">
+           <div class="col-md-6"> <img class="img-details "  src="/media/{{ albumdetails.album_art }}"></div>
+               <div class="col-md-6 song-details">
+                   <li><h4> <span class="glyphicon glyphicon-folder-close"></span> &nbsp; &nbsp;{{ albumdetails }}</h4> </li>
+                   <li><a> <span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;{{ albumdetails.artiste }}</a> </li>
+                  <li> <a> <span class="glyphicon glyphicon-tag"></span>&nbsp;{{ albumdetails.genre }}</a></li>
+
+               {% if user.is_authenticated %}
+
+                    <li><a type="button" class="btn btn-primary" href="{% url 'musicplay:album_update' albumdetails.id %}"><span class="glyphicon glyphicon-edit"></span>Update Album</a> </li>
+
+                   <form action="{% url 'musicplay:album_delete' albumdetails.id %}" method="post">
+                       {% csrf_token %}
+                       <button class="btn btn-danger"> <span class="glyphicon glyphicon-trash"></span> Delete Album </button>
+                   </form>
+
+                   {% else %}
+
+                   <a>You are not allowed to perfrom any actions on this album</a>
+
+               {% endif %}
+
+                   <h4>Songs</h4>
+                   {% for song in albumsongs %}
+                       <li><a class="text-center" href="{% url 'musicplay:songdetail' song.id %}"> <span class="glyphicon glyphicon-music"></span> {{ song }}</a> </li>
+                   {% endfor %}
+
+               </div>
+        </div>
+    {% endblock %}
+
+</body>
+</html>

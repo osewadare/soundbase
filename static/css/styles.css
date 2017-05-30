@@ -1,0 +1,165 @@
+header {
+	margin-bottom:30px;
+}
+
+.imgeffect {
+		display: inline-block;
+		max-width: 100%;
+		height: auto;
+		padding: 4px;
+		line-height: 1.42857143;
+		background-color: #fff;
+		border: 1px solid #ddd;
+		border-radius: 4px;
+		-webkit-transition: all .2s ease-in-out;
+		-o-transition: all .2s ease-in-out;
+		transition: all .2s ease-in-out;
+}
+
+
+.imgeffect:hover
+{
+	border-radius: 70%;
+	border: 2px solid #ddd50e;
+}
+
+.ratingstext{
+	font-size: smaller;
+}
+
+.viewdetails{
+	position: relative;
+}
+
+.img-details
+{
+		display: inline-block;
+		max-width: 100%;
+		height: 150%;
+		padding: 4px;
+		line-height: 1.42857143;
+		background-color: #170d0dcc;
+		border: 1px solid #ddd;
+		border-radius: 4px;
+		-webkit-transition: all .2s ease-in-out;
+		-o-transition: all .2s ease-in-out;
+		transition: all .2s ease-in-out;
+}
+
+.song-details{
+	list-style: none;
+	line-height: 50px;
+	text-align: center;
+	background-color: #170d0dcc;
+}
+
+
+.song-details a {
+	text-decoration: none;
+	color:whitesmoke;
+}
+
+footer{
+	background: #e7e7e7;
+}
+
+footer a:hover{
+	text-decoration: none;
+}
+
+.leftfooter{
+	float: left;
+	margin-left:8%;
+}
+
+.navbar{
+	margin-bottom:0px;
+}
+
+body{
+	background: url('/static/img/back1.jpg');
+	background-size: cover;
+	color: #edeaea;
+}
+
+.breadcrumb{
+	color:#edeaea;
+	margin-top:0px;
+	border-radius: 0px;
+	background-color: #170d0dcc;
+}
+
+.btn, .btn-success, .btn-danger{
+	border-radius: 0px;
+}
+
+.navbar-brand{
+	font-family: "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
+}
+
+
+.navbar-default .navbar-brand {
+	color:#edeaea;
+}
+
+.navbar-default .navbar-brand:hover{
+	color:#edeaea;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color:#edeaea;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	color:#edeaea;
+	background-color: #d9534f;
+
+}
+
+.navbar-default .accountnav > li > a:hover {
+	color:#edeaea;
+	background-color: #5cb85c;
+
+}
+input{
+	color: #595151;
+}
+
+.modal-footer{
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+	background-color: #170d0dcc;
+
+}
+
+.modal-footer a {
+	color:#edeaea;
+}
+
+.navbar-default{
+	background-color: #170d0dcc;
+}
+
+.sidebar{
+	background-color: #170d0dcc;
+}
+
+.sidebar a{
+	color:#edeaea;
+	text-decoration-color: #bce8f1;
+}
+
+.nav > li > a:focus{
+	background-color: transparent;
+}
+
+.nav > li > a:hover{
+	background-color: transparent;
+}
+
+.margin-container{
+	margin-bottom: 50px;
+}
+
+

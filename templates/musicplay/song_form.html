@@ -1,0 +1,45 @@
+{% extends 'musicplay/base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    <title>SoundBase:Add a new song</title>
+    {% endblock %}
+</head>
+<body>
+{% block breadcrumb %} <h5 class="breadcrumb"> SoundBase > Songs > Add Song </h5> {% endblock %}
+
+{% block body %}
+
+    {% if user.is_authenticated %}
+
+        {# Load the tag library #}
+        {% load bootstrap3 %}
+
+        {# Load CSS and JavaScript #}
+        {% bootstrap_css %}
+        {% bootstrap_javascript %}
+
+        {# Display django.contrib.messages as Bootstrap alerts #}
+        {% bootstrap_messages %}
+
+        {# Display a form #}
+        <form action="" method="post" class="form" enctype="multipart/form-data">
+          {% csrf_token %}
+          {% bootstrap_form form %}
+          {% buttons %}
+            <button type="submit" class="btn btn-primary">
+              {% bootstrap_icon "star" %} Submit
+            </button>
+          {% endbuttons %}
+        </form>
+     {% else  %}
+        <a href="{% url 'account_login' %}">  You are not allowed to perform this action. Login to upload a song</a>
+    {% endif %}
+{% endblock %}
+
+
+
+</body>
+</html>

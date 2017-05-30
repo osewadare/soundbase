@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		{% block title %}
+        <title>SoundBase: Base of Good Music</title>
+        {% endblock %}
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="/static/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/static/css/font-awesome.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="/static/css/styles.css" rel="stylesheet">
+	</head>
+	<body>
+
+<header class="navbar navbar-default navbar-static-top" role="banner">
+  <div class="container">
+
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand"><span class="fa fa-music"></span> SoundBase</a>
+    </div>
+
+    <nav class="collapse navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="{% url 'musicplay:index' %}">Songs</a>
+        </li>
+        <li>
+          <a href="{% url 'musicplay:albums' %}">Albums</a>
+        </li>
+        <li>
+          <a href="{% url 'musicplay:add_song' %}"><span class="fa fa-plus-square"></span>&nbsp; Add Song</a>
+        </li>
+        <li>
+          <a href="{% url 'musicplay:add_album' %}"><span class="fa fa-plus-square"></span>&nbsp; Add Album</a>
+        </li>
+      </ul>
+        <ul class="nav navbar-nav navbar-right list-inline accountnav">
+            {% if user.is_authenticated %}
+            <li>
+              <a>Hi, {{ user.username }}</a>
+            </li>
+
+            <li>
+              <a href="{% url 'account_logout' %}">Logout</a>
+            </li>
+            <li>
+              <a href="{% url 'account_set_password' %}">Set Password</a>
+            </li>
+            <li>
+                {% else %}
+                <li>
+                <a href="{% url 'account_signup' %}">Sign Up</a>
+            </li>
+            <li>
+              <a href="{% url 'account_login' %}">Login</a>
+            </li>
+            {% endif %}
+        </ul>
+    </nav>
+  </div>
+</header>
+
+
+<!-- Begin Body -->
+<div class="container margin-container">
+	<div class="row">
+           {% block breadcrumb %} <h5 class="breadcrumb"> SoundBase > Songs </h5> {% endblock %}
+    {% block topratings %}
+  			<div class="col-md-3" id="leftCol">
+              	
+				<div class="well sidebar">
+              	<ul class="nav nav-stacked" id="sidebar">
+
+                {# Recent Uploads #}
+                <li> <a  class="btn btn-success"  >  <span class="glyphicon glyphicon-time"></span>  &nbsp; Recent uploads</a> </li>
+                    {% for song in latestsongs %}
+                  <li>  <a class="ratingstext" href="{% url 'musicplay:songdetail' song.id %}"> <span class="glyphicon glyphicon-music"></span> {{ song }}</a></li>
+                    {% endfor %}
+
+                {# Top Songs #}
+                  <li><a  class="btn btn-danger" >  <span class="glyphicon glyphicon-music"></span>  &nbsp;Top Songs</a></li>
+                        {% for song in songtopratings %}
+                          <li> <a class ="ratingstext"  href="{% url 'musicplay:songdetail' song.id %}" >{{ song }}
+                              {% if song.rating == '5 STAR' %}
+                                  {% for star in 5star %}
+                                      <span style="color: gold; float: right" class="fa fa-star"></span>
+                                  {% endfor %}{% endif %}
+                              {% if song.rating == '4 STAR' %}
+                                  {% for star in 4star %}
+                                      <span style="color: gold; float: right" class="fa fa-star"></span>
+                                  {% endfor %}{% endif %}
+                              {% if song.rating == '3 STAR' %}
+                                  {% for star in 3star %}
+                                      <span style="color: gold; float: right" class="fa fa-star"></span>
+                                  {% endfor %}{% endif %}&nbsp;
+                          </a> </li>
+                        {% endfor %}
+
+                {# Top Albums #}
+
+                   <li> <a class="btn btn-success">  <span class="glyphicon glyphicon-folder-close"></span>  &nbsp; Top Albums</a> </li>
+                        {% for album in albumtopratings %}
+                              <li>  <a class="ratingstext" href="{% url 'musicplay:albumdetail' album.id %}">
+                                  {% if album.rating == '5 STAR' %}
+                                  {% for star in 5star %}
+                                      <span style="color: gold; float: right" class="fa fa-star"></span>
+                                  {% endfor %}{% endif %}
+                              {% if album.rating == '4 STAR' %}
+                                  {% for star in 4star %}
+                                      <span style="color: gold; float: right" class="fa fa-star"></span>
+                                  {% endfor %}{% endif %}
+                              {% if album.rating == '3 STAR' %}
+                                  {% for star in 3star %}
+                                      <span style="color: gold; float: right" class="fa fa-star"></span>
+                                  {% endfor %}{% endif %}&nbsp;{{ album }}
+                              </a> </li>
+
+                        {% endfor %}
+
+                </ul>
+  				</div>
+
+
+      		</div>
+    {% endblock %}
+    {% block songdetails %}
+        <div class="col-md-9">
+           <div class="col-md-6"> <img class="img-details "  src="/media/{{ songdetails.song_art }}"></div>
+               <div class="col-md-6 song-details">
+                   <li><a> <span class="glyphicon glyphicon-music"></span> &nbsp; &nbsp;{{ songdetails }}</a> </li>
+                   <li><a> <span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;{{ songdetails.artiste }}</a> </li>
+                  <li> <a> <span class="glyphicon glyphicon-tag"></span>&nbsp;{{ songdetails.genre }}</a></li>
+                   <li><a href="{% url 'musicplay:albumdetail' songdetails.album.id %}"> <span class="glyphicon glyphicon-folder-close"></span>&nbsp;&nbsp;{{ songdetails.album }}</a></li>
+                  <li> <audio controls="controls" src="/media/{{ songdetails.song_file }}"></audio> </li>
+
+
+                   {% if user.is_authenticated %}
+
+                    <a  class="btn btn-primary" href="/media/{{ songdetails.song_file }}">
+                      <span class="glyphicon glyphicon-download"></span> Download Song
+                    </a>
+
+                   <a class="btn btn-primary" href="{% url 'musicplay:song_update' songdetails.id %}">
+                      <span class="glyphicon glyphicon-edit"></span> Update Song
+                    </a>
+
+                   <form action="{% url 'musicplay:song_delete' songdetails.id %}" method="post" >
+                  {% csrf_token %}
+                    <button type="submit" class="btn btn-danger">
+                      <span class="glyphicon glyphicon-trash"></span> Delete Song
+                    </button>
+                    </form>
+
+                       {% else %}
+
+                       <a href="{% url 'account_login' %}"> You are not allowed to perform any further actions on this song. You need to Login</a>
+
+                   {% endif %}
+
+               </div>
+        </div>
+    {% endblock %}
+</div>
+
+</div>
+
+
+	<!-- script references -->
+		<script src="../../static/js/jquery.min.js"></script>
+		<script src="../../static/js/bootstrap.min.js"></script>
+		<script src="../../static/js/scripts.js"></script>
+	</body>
+    <footer class="modal-footer"><a class="leftfooter">  <span class="glyphicon glyphicon-copyright-mark"></span>  SoundBase 2017 </a><a href="http://plansharetech.com"> Delicately Crafted by  PlanShare Technolgies <a/></footer>
+</html>

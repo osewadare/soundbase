@@ -1,0 +1,43 @@
+{% extends 'musicplay/base.html' %}<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    <title>SoundBase: Base of Good Music</title>
+    {% endblock %}
+</head>
+<body>
+{# Load the tag library #}
+{% load bootstrap3 %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+{# Display django.contrib.messages as Bootstrap alerts #}
+{% bootstrap_messages %}
+
+
+{# MainBar #}
+{% block body %}
+    <div class="row">
+        {% for song in all_songs %}
+            <div class="col-md-4">
+
+            <a href="{% url 'musicplay:songdetail' song.id %}"><img class="imgeffect"  src="../media/{{ song.song_art }}"> <span class="viewdetails"></span></a><br>
+                 <h5 class="text-center" href="{% url 'musicplay:songdetail' song.id %}"> <span class="glyphicon glyphicon-music"></span> {{ song }}</h5>
+                 <h5 class="text-center"> <span class="glyphicon glyphicon-user"></span> {{ song.artiste }}</h5>
+                <h6 class="text-center"> <span class="glyphicon glyphicon-folder-close"></span> {{ song.album }}</h6> <hr>
+            </div>
+        {% endfor %}
+        </div>
+
+
+<div class="row">
+
+</div>
+
+{% endblock %}
+</body>
+</html>
