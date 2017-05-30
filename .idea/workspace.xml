@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cb5e4f4-ee1d-4791-8141-cff81966ba02" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SoundBase/settings.py" afterPath="$PROJECT_DIR$/SoundBase/settings.py" />
     </list>
@@ -51,17 +50,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SoundBase/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="175" column="0" lean-forward="false" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
+            <state relative-caret-position="153">
+              <caret line="61" column="22" lean-forward="false" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="django_site" pinned="false" current-in-tab="true">
+      <file leaf-file-name="django_site" pinned="false" current-in-tab="false">
         <entry file="dbDummy://dbtable:/fe1ca66d/aa183389-ba7e-4b2d-84d5-277ce1531e1b/django_site">
           <provider editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -548,7 +547,14 @@
       <option name="project" value="LOCAL" />
       <updated>1496178437661</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ADD soundbasemusic to database">
+      <created>1496178989280</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1496178989280</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -626,7 +632,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ADD vsoundbasemusic to database" />
-    <option name="LAST_COMMIT_MESSAGE" value="ADD vsoundbasemusic to database" />
+    <MESSAGE value="ADD soundbasemusic to database" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD soundbasemusic to database" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1021,14 +1028,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SoundBase/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="175" column="0" lean-forward="false" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/fe1ca66d/aa183389-ba7e-4b2d-84d5-277ce1531e1b/django_site">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1039,6 +1038,14 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SoundBase/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="61" column="22" lean-forward="false" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
