@@ -28,6 +28,7 @@ ALLOWED_HOSTS = ['*']
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 # Quick-start development settings - unsuitable for production
@@ -62,7 +63,8 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.facebook',
-    'django_filters'
+    'django_filters',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
@@ -76,6 +78,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'SoundBase.urls'
+
 
 TEMPLATES = [
     {
@@ -152,8 +155,6 @@ STATIC_ROOT = 'staticfiles'
 
 ##Development Mode
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
-
-TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'templates'),)
 
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 

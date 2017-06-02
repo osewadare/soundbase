@@ -15,6 +15,7 @@ urlpatterns = [
     url(r'song/(?P<pk>[0-9]+)/delete/$', views.SongDelete.as_view(), name='song_delete'),
     url(r'album/(?P<pk>[0-9]+)/update/$', views.AlbumUpdate.as_view(), name='album_update'),
     url(r'album/(?P<pk>[0-9]+)/delete/$', views.AlbumDelete.as_view(), name='album_delete'),
-    url(r'^search/$', views.search, name='search')
-
+    url(r'^search/$', views.search, name='search'),
+    url(r'^api/songs/$', views.songs_list_api.as_view(), name='songlistapi'),
+    url(r'^api/songs/(?P<pk>[0-9]+)/$', views.songs_detail_api.as_view(), name='songdetailapi')
 ]
