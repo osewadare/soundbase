@@ -163,3 +163,79 @@ input{
 }
 
 
+.forms{
+  text-align: center;
+}
+
+.forms h1 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.forms p, a{
+  font-size: 14px;
+  text-align: center;
+	color: white;
+}
+.forms p, a:hover{
+	 color: #f3f3f3;
+ }
+
+.forms a:hover{
+	 color: #f3f3f3;
+ }
+
+.forms input            {
+  text-align: center;
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  width:300px;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+input:focus       { outline:none; }
+
+/* LABEL ======================================= */
+.forms label             {
+  color:#999;
+  font-size:10px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+.forms input:focus ~ label, input:valid ~ label       {
+  top:-20px;
+  font-size:14px;
+  color:#5264AE;
+}
+
+.forms button{
+  display: inline-block;
+  padding: 6px 12px;
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+   color: #fff;
+   background-color: #5cb85c;
+   border-color: #4cae4c;
+}
+
+.forms > p > a{
+	 color: white;
+ }
+

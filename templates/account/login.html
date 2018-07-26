@@ -1,28 +1,52 @@
 {% extends "account/base.html" %}
-
 {% load i18n %}
 {% load account socialaccount %}
+  {% block content %}
+  <!--      Wizard container        -->
+    <div class="wizard-container">
+        <div class="card wizard-card" data-color="green" id="wizard">
 
-{% block head_title %}{% trans "Sign In" %}{% endblock %}
+        <!--        You can switch " data-color="green" "  with one of the next bright colors: "blue", "azure", "orange", "red"       -->
+                <div class="wizard-header">
+                    <h3 class="wizard-title">Sign In</h3>
+                </div>
+                <div class="wizard-navigation">
+                    <div class="progress-with-circle">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="4" style="width: 15%;"></div>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#location" data-toggle="tab">
+                                <div class="icon-circle">
+                                    <i class="ti-map"></i>
+                                </div>
+                                Sign In
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane" id="location">
+                        <div class="row">
+                            <div class="col-sm-12">
+                            <br>
+                               {% get_providers as socialaccount_providers %}
 
-{% block content %}
+                            {% if socialaccount_providers %}
 
-<h1>{% trans "Sign In" %}</h1>
+                            <p style="text-align: center">Dont have an Account? &nbsp; <a class="btn btn-success" href="{{ signup_url }}">Sign Up</a></p>
+                            </div>
+                            <div class="col-sm-2"></div>
+                            <div class="col-sm-8">
 
-{% get_providers as socialaccount_providers %}
-
-{% if socialaccount_providers %}
-<p>{% blocktrans with site.name as site_name %}Please sign in with one
-of your existing third party accounts. Or, <a href="{{ signup_url }}">sign up</a>
-for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
+<div style="text-align: center" class="login-or">{% trans 'or' %}</div>
 
 <div class="socialaccount_ballot">
 
-  <ul class="socialaccount_providers">
+  <ul style="text-align: center" class="socialaccount_providers">
     {% include "socialaccount/snippets/provider_list.html" with process="login" %}
   </ul>
-
-  <div class="login-or">{% trans 'or' %}</div>
+    <br>
 
 </div>
 
@@ -32,15 +56,35 @@ for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
 <p>{% blocktrans %}If you have not created an account yet, then please
 <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
 {% endif %}
-
+<div class="forms">
 <form class="login" method="POST" action="{% url 'account_login' %}">
   {% csrf_token %}
-  {{ form.as_p }}
+    {% load widget_tweaks %}
+    {{ form.errors }}
+    <label>Username</label>
+    {{ form.login|attr:"class:form-control" }}
+    <label>Password</label>
+    {{ form.password|attr:"class:form-control"  }}
+    <label>Remember Me</label>
+    {{ form.remember|attr:"class:form-control"  }}
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
   {% endif %}
-  <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
-  <button class="primaryAction" type="submit">{% trans "Sign In" %}</button>
-</form>
+   <button class="btn btn-success primaryAction" type="submit">{% trans "Sign In" %}</button><br><br>
 
+<a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
+</form>
+</div>
+
+
+                            </div>
+                            <div class="col-sm-2"></div>
+                        </div>
+                    </div>
+
+                </div>
+        </div>
+    </div> <!-- wizard container -->
 {% endblock %}
+
+
