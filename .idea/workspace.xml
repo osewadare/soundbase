@@ -2,75 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cb5e4f4-ee1d-4791-8141-cff81966ba02" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/fonts/themify.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/fonts/themify.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/img/apple-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/img/default-avatar.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/img/favicon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/img/new_logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/img/paper-1.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/img/paper-2.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/img/paper-3.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/img/thumb_list_boat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/img/thumb_list_place.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/img/thumb_register.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/img/tim_80x80.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/img/wizard-boat.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/img/wizard-city.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/img/wizard.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/musicplay/forms.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/browser.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/css/demo.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/css/paper-bootstrap-wizard.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/css/themify-icons-demo.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/css/themify-icons.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/fonts/themify.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/fonts/themify.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/js/jquery-2.2.4.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/js/jquery.bootstrap.wizard.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/js/jquery.validate.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/js/paper-bootstrap-wizard.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/scss/paper-bootstrap-wizard.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/scss/paper-bootstrap-wizard/_buttons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/scss/paper-bootstrap-wizard/_card.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/scss/paper-bootstrap-wizard/_footers.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/scss/paper-bootstrap-wizard/_inputs.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/scss/paper-bootstrap-wizard/_labels-progress-bar.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/scss/paper-bootstrap-wizard/_misc.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/scss/paper-bootstrap-wizard/_mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/scss/paper-bootstrap-wizard/_navs-pagination.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/scss/paper-bootstrap-wizard/_responsive.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/scss/paper-bootstrap-wizard/_tooltips.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/scss/paper-bootstrap-wizard/_typography.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/scss/paper-bootstrap-wizard/_variables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/scss/paper-bootstrap-wizard/_wizard-card.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/scss/paper-bootstrap-wizard/mixins/_buttons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/scss/paper-bootstrap-wizard/mixins/_inputs.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/scss/paper-bootstrap-wizard/mixins/_labels.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/scss/paper-bootstrap-wizard/mixins/_transparency.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wizard/scss/paper-bootstrap-wizard/mixins/_vendor-prefixes.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/account/base2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/musicplay/add_album.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/musicplay/add_song.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/musicplay/form_template.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/musicplay/album_form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/musicplay/song_form.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SoundBase/settings.py" afterPath="$PROJECT_DIR$/SoundBase/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/musicplay/models.py" afterPath="$PROJECT_DIR$/musicplay/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/musicplay/urls.py" afterPath="$PROJECT_DIR$/musicplay/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/musicplay/views.py" afterPath="$PROJECT_DIR$/musicplay/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/styles.css" afterPath="$PROJECT_DIR$/static/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/account/base.html" afterPath="$PROJECT_DIR$/templates/account/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/account/login.html" afterPath="$PROJECT_DIR$/templates/account/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/account/password_change.html" afterPath="$PROJECT_DIR$/templates/account/password_change.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/account/signup.html" afterPath="$PROJECT_DIR$/templates/account/signup.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/musicplay/base.html" afterPath="$PROJECT_DIR$/templates/musicplay/base.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -158,6 +90,7 @@
               <caret line="11" column="49" lean-forward="false" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
+                <marker date="1532601437923" expanded="true" signature="207:951" ph="..." />
               </folding>
             </state>
           </provider>
@@ -744,7 +677,14 @@
       <option name="project" value="LOCAL" />
       <updated>1496388705090</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="No updates really">
+      <created>1532602770678</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1532602770678</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView">
@@ -762,11 +702,11 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35627836" sideWeight="0.45803356" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32459018" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2672131" sideWeight="0.535445" order="14" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3256579" sideWeight="0.5204236" order="14" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18882175" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3262295" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3256579" sideWeight="0.4795764" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26065573" sideWeight="0.49522674" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25328946" sideWeight="0.46455505" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25328946" sideWeight="0.46455505" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.118003026" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25328946" sideWeight="0.47209653" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16792738" sideWeight="0.54196644" order="1" side_tool="true" content_ui="tabs" />
@@ -817,6 +757,24 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -825,7 +783,8 @@
     <MESSAGE value="ADD soundbasemusic to database" />
     <MESSAGE value="Remoe socialaacount" />
     <MESSAGE value="Restful API created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Restful API created" />
+    <MESSAGE value="No updates really" />
+    <option name="LAST_COMMIT_MESSAGE" value="No updates really" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1085,6 +1044,7 @@
           <caret line="11" column="49" lean-forward="false" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
+            <marker date="1532601437923" expanded="true" signature="207:951" ph="..." />
           </folding>
         </state>
       </provider>
